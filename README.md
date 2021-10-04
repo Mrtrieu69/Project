@@ -1,2 +1,3 @@
 # Project
-Protect your documents with our service :D
+Protect your documents with our service <3
+
