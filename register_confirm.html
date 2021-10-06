@@ -27,22 +27,22 @@
     <div class="container" style="margin-top:40px;">
         <div class="row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-4 content" >
+            <div class="col-sm-4 content">
                 <br>
-                <h3>Создание аккаунта</h3>
+                <h3>Введите полученный код</h3>
+                <div class="content-text">
+                    <p style="margin-top: 30px;">На указанную электронную почту (<a href="#">user@gmail.com</a>) было отправлено письмо с шестизначным кодом
+                        подтверждения. Введите его, чтобы завершить регистрацию.
+                    </p>
+                </div>
                 <br><br>
-                
-                    <form action="#">
-                        <div class="content-text">
-                            <input type="email" class="form-control" name="email" placeholder="Enter email" style="height: 50px;">
-                            <br>
-                            <input type="password" class="form-control" name="password" placeholder="Password" style="height: 50px;">
-                            <br>
-                            <input type="password" class="form-control" name="password_confirm" placeholder="Confirm password" style="height: 50px;">
-                            <br>
-                        </div>
-                        <input id="myBtn" type="submit" value="Регистрация" class="btn btn-primary" style="margin-bottom: 20px;">
-                    </form>
+                <form action="#">
+                    <div class="content-text">
+                        <input type="password" class="form-control" name="code" style="height: 50px;">
+                        <a href="#">Отправить код еще раз</a>
+                    </div>
+                    <input type="submit" value="Отправить" class="btn btn-primary" style="margin-bottom: 20px;">
+                </form>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-4">

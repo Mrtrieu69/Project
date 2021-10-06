@@ -11,10 +11,6 @@ body {
     background-color: #EEEEEE;
 }
 
-.content2{
-    border-radius: 15px;
-    background-color: #EEEEEE;
-}
 
 /* Delete underline */
 div > a{
@@ -100,6 +96,7 @@ h3 {
     margin: 0 auto;
 }
 
+
 /* Add Animation - Zoom in the Modal */
 .main-image  { 
     animation-name: zoom;
@@ -156,6 +153,14 @@ ul li img:hover {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
+}
+
+.container1 img{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+    border: 2mm ridge rgba(55, 170, 126, 0.6);
 }
 
 .drag-area{
@@ -229,8 +234,6 @@ ul li img:hover {
     justify-self: center;
     color: white;
 }
-
-
 
   
 
