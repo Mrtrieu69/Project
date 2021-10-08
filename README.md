@@ -1,5 +1,5 @@
-# Project
-Protect your documents with our service ❤❤❤
+# Project ❤
+Protect your documents with our service ^-^ 
 # Decription 💡
 <ul>
   <li>Encrypting information helps to keep confidential data secret, but at the same time it attracts unnecessary attention. </li>
