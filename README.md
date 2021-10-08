@@ -1,5 +1,5 @@
 # Project
-Protect your documents with our service &#128151
+Protect your documents with our service <img src="https://img.shields.io/badge/picpay-21C25E?style=for-the-badge&logo=picpay&logoColor=white"/>
 # Decription 
 <ul>
   <li>Encrypting information helps to keep confidential data secret, but at the same time it attracts unnecessary attention. </li>
