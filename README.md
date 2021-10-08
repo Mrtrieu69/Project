@@ -1,6 +1,6 @@
 # Project
-Protect your documents with our service :D
-# Decription &#128151
+Protect your documents with our service &#128151
+# Decription 
 <ul>
   <li>Encrypting information helps to keep confidential data secret, but at the same time it attracts unnecessary attention. </li>
   <li>If a user is trying to hide data using encryption, then there is probably something important in him. Therefore, most often it is more important not to encrypt the data, but to hide the very existence of secret information. </li>
