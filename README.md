@@ -6,7 +6,7 @@ Protect your documents with our service &#128151
   <li>If a user is trying to hide data using encryption, then there is probably something important in him. Therefore, most often it is more important not to encrypt the data, but to hide the very existence of secret information. </li>
   <li>In such cases, a trick comes to the rescue, which allows you to hide the file in any unremarkable image.</li>
 </ul>
-# Decription 🔥
+<h1>Funtions 🔥</h1> 
 <ul>
   <li>Each user can register.</li>
   <li>The user can hide any file up to 1 mb in size in the image.</li>
