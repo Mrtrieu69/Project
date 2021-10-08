@@ -31,11 +31,11 @@ function choise(){
     document.querySelector(".img").style.display = "block";             
 }
 
-
+// Delete image
 
 function deleted(){
     let img = document.querySelector(".img")
-    
+    img.setAttribute('src', "")
     img.style.display ="none"
     dragArea.classList.remove("active");
     dragText.textContent = "Drag & Drop"

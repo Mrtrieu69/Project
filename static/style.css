@@ -11,6 +11,16 @@ body {
     background-color: #EEEEEE;
 }
 
+/* shadow */
+.content:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+}
+
+.content1{
+    border-radius: 15px;
+    background-color: #EEEEEE;
+}
 
 /* Delete underline */
 div > a{
@@ -20,11 +30,7 @@ a:hover{
     text-decoration: underline;
 }
 
-/* shadow */
-.content:hover{
-    transform: scale(1.05, 1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3)
-}
+
 
 h1 {
     font-size: 100%;
@@ -155,7 +161,7 @@ ul li img:hover {
     margin: 0 auto;
 }
 
-.container1 img{
+.container1 .encrypted{
     max-width: 500px;
     width: 100%;
     border-radius: 15px;
@@ -211,6 +217,7 @@ ul li img:hover {
     margin: 0 auto;
     margin-bottom: 15px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .drag-area .file-upload{
@@ -235,5 +242,13 @@ ul li img:hover {
     color: white;
 }
 
-  
+.icon{
+    width: 55px;
+    height: 50px; 
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 4px;
+}
 

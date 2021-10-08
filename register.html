@@ -31,15 +31,43 @@
                 <br>
                 <h3>Создание аккаунта</h3>
                 <br><br>
-                
                     <form action="#">
-                        <div class="content-text">
+                        <div class="content-text" style="text-align: right;" >
                             <input type="email" class="form-control" name="email" placeholder="Enter email" style="height: 50px;">
                             <br>
-                            <input type="password" class="form-control" name="password" placeholder="Password" style="height: 50px;">
+                            <div style="display: flex; flex-direction: row;">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" style="height: 50px; width: 330px;">
+                                <div class="icon" style="display: block;" onclick="open_passwd()" id="one">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px;" width="26" height="26" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon" style="display: none;" onclick="close_passwd()" id="two">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px;" width="26" height="26" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                                        <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                                        <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                                    </svg>
+                                </div>
+                            </div>                 
                             <br>
-                            <input type="password" class="form-control" name="password_confirm" placeholder="Confirm password" style="height: 50px;">
+                            <div style="display: flex; flex-direction: row;">
+                                <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="Confirm password" style="height: 50px; width: 330px;">
+                                <div class="icon" onclick="open_passwd_confirm()" id="three">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px;" width="26" height="26" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg>
+                                </div>
+                                <div class="icon" style="display: none;" onclick="close_passwd_confirm()" id="four">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 12px;" width="26" height="26" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                                        <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                                        <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                                    </svg>
+                                </div>
+                            </div>
                             <br>
+                            <a href="#">Do you have an account?</a>
                         </div>
                         <input id="myBtn" type="submit" value="Регистрация" class="btn btn-primary" style="margin-bottom: 20px;">
                     </form>
@@ -49,7 +77,7 @@
                 <img src="images/logo.png" alt="logo" style="width: 700px; height: 300px;">
             </div>
         </div>
-
+        
         <!-- footer -->
         <footer style="margin-top: 80px;">
             <hr>
@@ -74,5 +102,47 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function open_passwd(){
+            let passwd = document.querySelector("#password")
+            let icon1 = document.querySelector("#one")
+            let icon2 = document.querySelector("#two")
+
+            passwd.setAttribute("type", "text")
+            icon1.style.display = "none";
+            icon2.style.display = "block";
+        }
+
+        function close_passwd(){
+            let passwd = document.querySelector("#password")
+            let icon1 = document.querySelector("#one")
+            let icon2 = document.querySelector("#two")
+
+            passwd.setAttribute("type", "password")
+            icon1.style.display = "block";
+            icon2.style.display = "none";
+        }
+
+        function open_passwd_confirm(){
+            let passwd_confirm = document.querySelector("#password_confirm")
+            let icon3 = document.querySelector("#three")
+            let icon4 = document.querySelector("#four")
+
+            passwd_confirm.setAttribute("type", "text")
+            icon3.style.display = "none";
+            icon4.style.display = "block";
+        }
+
+        function close_passwd_confirm(){
+            let passwd_confirm = document.querySelector("#password_confirm")
+            let icon3 = document.querySelector("#three")
+            let icon4 = document.querySelector("#four")
+
+            passwd_confirm.setAttribute("type", "password")
+            icon3.style.display = "block";
+            icon4.style.display = "none";
+        }
+    </script>
 </body>
 </html>
