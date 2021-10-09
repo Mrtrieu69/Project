@@ -35,14 +35,14 @@
                     </p>
                     <div>
                         <ul class="nav nav-pills">
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com.jpg" onclick="changeImage('one')" id='one'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (1).jpg" onclick="changeImage('two')" id='two'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (2).jpg" onclick="changeImage('three')" id='three'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (3).jpg" onclick="changeImage('four')" id='four'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (4).jpg" onclick="changeImage('five')" id='five'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (5).jpg" onclick="changeImage('six')" id='six'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (6).jpg" onclick="changeImage('seven')" id='seven'></li>
-                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (7).jpg" onclick="changeImage('eight')" id='eight'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com.jpg" onclick="changeImage('one')" id='one' name ='one'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (1).jpg" onclick="changeImage('two')" id='two' name='two'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (2).jpg" onclick="changeImage('three')" id='three' name ='three'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (3).jpg" onclick="changeImage('four')" id='four' name ='four'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (4).jpg" onclick="changeImage('five')" id='five' name ='five'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (5).jpg" onclick="changeImage('six')" id='six' name ='six'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (6).jpg" onclick="changeImage('seven')" id='seven' name ='seven'></li>
+                            <li class="nav-item"><img src="./our_images/bg_bggenerator_com (7).jpg" onclick="changeImage('eight')" id='eight' name ='eight'></li>
                         </ul>
                         <div class="container1">
                             <div class="drag-area">
@@ -76,9 +76,11 @@
             
             <div id="main-image" class="main-image">
                 <span class="close">&times;</span>                
-                <img src="" id="main">
+                <img src="" id="main" name="">
                 <button onclick="choise()" class="btn btn-success" style="margin-left: 35px;" >Выбрать</button>
-            </div>
+                <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                <spspann class="next" onclick="plusSlides(1)">&#10095;</span>    
+            </dispan>
         </div>
 
 

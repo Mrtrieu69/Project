@@ -16,9 +16,11 @@ function changeImage(id){
     modal.style.display ="block";
     let img = document.getElementById(id);
     let srcImg = img.getAttribute("src");
+    let nameImg = img.getAttribute("name")
     let imgMain = document.getElementById("main");
+
     imgMain.setAttribute("src", srcImg);
-    
+    imgMain.setAttribute("name", nameImg);
 }
 
 
@@ -93,3 +95,35 @@ dragArea.addEventListener("drop", (event) =>{
     file = event.dataTransfer.files[0];
     displayFile();
 })
+
+
+// Slideshows
+
+function plusSlides(n) {
+    let nameDir = {"one":1, "two":2, "three":3, "four":4, "five":5, "six":6, "seven":7, "eight":8}
+    let imgName = document.getElementById("main").getAttribute("name");
+    let slideIndex = nameDir[imgName];
+
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n){
+    let slideIndex;
+
+    if(n==9){
+        slideIndex = 1;
+        slidecurrent = 8;
+    }else if(n==0){
+        slideIndex = 8;
+    } else{
+        slideIndex = n;
+    }
+    let idDir = {1:"one", 2: "two", 3:"three", 4:"four", 5:"five", 6:"six", 7:"seven", 8:"eight"}
+    let idImg = idDir[slideIndex];
+    let srcImg = document.getElementById(idImg).getAttribute('src');
+    let nameImg = document.getElementById(idImg).getAttribute('name');
+    let imgMain = document.getElementById("main");
+
+    imgMain.setAttribute('src', srcImg);
+    imgMain.setAttribute('name', nameImg);
+}
